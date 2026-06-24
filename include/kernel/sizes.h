@@ -1,0 +1,38 @@
+#ifndef __SIZES_H__
+#define __SIZES_H__
+
+/*
+ * Macros for commonly used sizes
+ */
+
+
+#define SIZE_128	0x80ULL
+#define SIZE_256	0x100ULL
+#define SIZE_512	0x200ULL
+
+#define SIZE_1K		0x400ULL
+#define SIZE_2K		0x800ULL
+#define SIZE_4K		0x1000ULL
+#define SIZE_8K		0x2000ULL
+#define SIZE_16K	0x4000ULL
+#define SIZE_32K	0x8000ULL
+#define SIZE_64K	0x10000ULL
+#define SIZE_128K	0x20000ULL
+#define SIZE_256K	0x40000ULL
+#define SIZE_512K	0x80000ULL
+
+#define SIZE_1M		0x100000ULL
+#define SIZE_2M		0x200000ULL
+#define SIZE_4M		0x400000ULL
+#define SIZE_8M		0x800000ULL
+#define SIZE_16M	0x1000000ULL
+#define SIZE_32M	0x2000000ULL
+#define SIZE_64M	0x4000000ULL
+#define SIZE_128M	0x8000000ULL
+#define SIZE_256M	0x10000000ULL
+#define SIZE_512M	0x20000000ULL
+
+#define SIZE_1G		0x40000000ULL
+#define SIZE_2G		0x80000000ULL
+
+#endif
