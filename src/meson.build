@@ -2,7 +2,7 @@ add_project_arguments([
   # tell the compiler to be very thorough and emit warnings for lots
   # of different things (some of which are nitpicky, but nevertheless
   # important to keep in mind when working with C)
-  '-Wall', '-Wextra',
+  '-Wall', '-Wextra', '-mno-relax',
   # tell the compiler to emit warnings for potentially problematic
   # integer conversions (e.g. signed-unsigned, etc.)
   '-Wconversion', '-Wsign-conversion',

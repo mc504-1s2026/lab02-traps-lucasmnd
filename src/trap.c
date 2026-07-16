@@ -46,8 +46,8 @@ void handle_trap()
 {
 	u64 cause = csr_read(CSR_SCAUSE) & BIT(63);
 
-	if(cause) handle_irq();
-	else handle_exception();
+	if(cause) { handle_irq();
+	} else handle_exception();
 }
 
 void hart_irq_enable()
