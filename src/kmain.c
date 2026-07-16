@@ -27,10 +27,9 @@ void kmain()
 	size_t command_index = 0;
 
 	serial_puts("Shell initialized!\r\n");
+	serial_puts("> ");
 
 	while(1){
-		serial_puts("> ");
-
 		size_t read_bytes = serial_read(input_buf);
 
 		for(unsigned long i = 0; i < read_bytes; i++){
@@ -59,6 +58,8 @@ void kmain()
 					serial_puts(output);
 				}
 
+				serial_puts("> ");
+				
 
 			} else {
 				command_buf[command_index + i] = current_char;
