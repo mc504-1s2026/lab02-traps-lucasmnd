@@ -60,6 +60,8 @@
 
 #define CSR_STIMECMP		0x14D
 
+#define BIT(i) (1ULL << (i))
+
 #ifndef __ASSEMBLER__
 /* CSR access macros, very heavily inspired by arch/riscv/asm/csr.h in Linux */
 #define csr_read(csr)						\
